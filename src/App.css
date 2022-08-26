@@ -1,0 +1,86 @@
+.container {
+  width: 550px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #B3B3B3;
+  border: 5px solid #FFA500;
+  padding: 50px;
+  gap: 30px;
+}
+.drum-keys-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+.key {
+  background-color: #808080;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform .5s step-end;
+  position: relative;
+}
+.control-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+h5, h4 {
+  margin: 0;
+  text-align: center;
+}
+.power-h5 {
+  margin-top: 20px;
+}
+#display {
+  margin-top: 10px;
+}
+#volume, .bank-h5 {
+  margin-top: 20px
+}
+.chord-name {
+  width: 85%;
+  height: 50px;
+  background-color: #808080;
+  margin: 20px auto 0 auto;
+}
+.power-div, .bank-div {
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  margin: 0 auto;
+}
+.power-button, .bank-button {
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+  float: right;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  transform: translateY(-5px);
+  background-color: blue;
+  cursor: pointer;
+}
+input[type="range"]:disabled {
+  background-color: blue;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  height: 5px;
+}
+input[type=range]::-webkit-slider-runnable-track:focus {
+  background-color: black;
+}
+.no-click {
+  pointer-events: none;
+}
+.kyle {
+  margin-top: 10px
+}
